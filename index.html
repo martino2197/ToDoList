@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>To Do List</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="src/css/home.css" />
+  <link rel="stylesheet" href="src/css/modal.css" />
+</head>
+<body>
+  <header>
+    <div>
+      <h1>@lmartin_maceda</h1>
+    </div>
+  </header>
+
+  <section class="home" id="home">
+
+    <div class="inputList">
+      <h2>To Do List</h2>
+      <div class="input">
+        <input id="input" name="tarea" type="text">
+        <button id="btnAgregar" class="btn-start" onclick="extraeTarea()">+</button>
+      </div>
+    </div>
+
+    <div class="listContainer">
+      <ul class="list" id="list">
+        <!-- <li>
+          <input type="checkbox">
+          <button>tarea 1</button>
+          <button class="delete">X</button>
+        </li>
+        <li>
+          <input type="checkbox">
+          <button>tarea 2</button>
+          <button class="delete">X</button>
+        </li> -->
+      </ul>
+    </div>
+  </section>
+
+
+  <div class="overlay" id="overlay">
+  </div>
+  <div class="modal" id="modal">
+    <h1>Título de pelicula</h1>
+    <div class="modal-content">
+      <img src="" alt="" width="170" height="256">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione impedit maiores enim alias ex accusantium quasi cum autem, nam, voluptas tenetur laudantium quod! Odit voluptate illo, voluptas vel quia, quae.</p>
+    </div>
+    <div class="modal-buttons">
+      <button class="modal-btn primary" id="hide-modal">Cerrar Modal</button>
+    </div>
+  </div>
+
+  <script src="src/js/home.js"></script>
+</body>
+</html>
